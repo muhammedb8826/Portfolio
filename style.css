@@ -1,10 +1,7 @@
-* {
-  margin: 0;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Gilda+Display&family=Libre+Baskerville&family=Noto+Sans&family=Open+Sans&family=Playfair+Display:wght@800&family=Poppins:wght@700&display=swap');
 
-body {
+* {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
