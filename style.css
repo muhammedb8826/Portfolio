@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Gilda+Display&family=Libre+Baskerville&family=Noto+Sans&family=Open+Sans&family=Playfair+Display:wght@800&family=Poppins:wght@700&display=swap');
 * {
   margin: 0;
-  font-family: 'Poppins';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Gilda+Display&family=Libre+Baskerville&family=Noto+Sans&family=Open+Sans&family=Playfair+Display:wght@800&family=Poppins:wght@700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
+
 .header {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 375px;
@@ -16,12 +21,14 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .menu {
   padding: 24px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .menu a {
   height: 20px;
   font-weight: 700;
@@ -30,6 +37,7 @@
   color: #6070ff;
   text-decoration: none;
 }
+
 .menu-bar {
   height: 20px;
   display: flex;
@@ -38,6 +46,7 @@
   flex-direction: column;
   cursor: pointer;
 }
+
 .menu-bar div {
   height: 2px;
   width: 16px;
@@ -50,9 +59,11 @@
   justify-content: center;
   align-items: center;
 }
+
 .heading {
   padding: 24px;
 }
+
 .heading h2 {
   height: 150px;
   font-weight: 700;
@@ -61,19 +72,23 @@
   color: #172b4d;
   padding-bottom: 24px;
 }
+
 .heading-text {
   padding: 24px;
 }
+
 .heading-text p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
+
 .social-media {
   width: 100%;
   padding: 0 24px;
 }
+
 .social-media p {
   height: 24px;
   font-weight: 500;
@@ -82,6 +97,7 @@
   color: #7f8cff;
   padding-bottom: 24px;
 }
+
 .icons img {
   padding-right: 24px;
 }
