@@ -60,8 +60,10 @@ nav .menu-bar {
   transform: translateX(-50%);
   width: 375px;
   background: #f7f7f9;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 48px;
 }
 
@@ -108,11 +110,15 @@ nav .menu-bar {
 }
 
 .portfolio-list-section {
-  background: #fff;
   border: 1px solid #dfe1e6;
+  background: #fff;
   border-radius: 16px;
   width: 327px;
   padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .portfolio-list-section img {
@@ -129,10 +135,9 @@ nav .menu-bar {
 .canopy-list {
   padding: 0;
   display: flex;
-  margin: 12px 0;
 }
 
-#canopy {
+.canopy {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -160,7 +165,6 @@ nav .menu-bar {
   list-style: none;
   display: flex;
   padding: 0;
-  margin: 24px 0;
 }
 
 .teck-stacks li {
@@ -223,6 +227,7 @@ nav .menu-bar {
   border-radius: 16px;
   width: 327px;
   padding: 12px;
+  margin: 0 auto;
 }
 
 .about-me-text {
@@ -264,6 +269,7 @@ nav .menu-bar {
 }
 
 hr {
-  height: 1px;
   background: #dfe1e6;
+  border: none;
+  height: 1px;
 }
