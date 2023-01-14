@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Gilda+Display&family=Libre+Baskerville&family=Noto+Sans&family=Open+Sans&family=Playfair+Display:wght@800&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Gilda+Display&family=Libre+Baskerville&family=Noto+Sans&family=Open+Sans&family=Playfair+Display:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 * {
+  box-sizing: border-box;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -58,14 +59,11 @@ nav .menu-bar {
   left: 50%;
   transform: translateX(-50%);
   width: 375px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 93%;
 }
 
 .content {
   padding: 0 24px;
+  height: 590px;
 }
 
 .content h1 {
@@ -101,4 +99,106 @@ nav .menu-bar {
 
 .icons li {
   margin-right: 24px;
+}
+
+.portfolio-list-section {
+  padding: 40px 40px;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.canopy-list {
+  padding: 0;
+  display: flex;
+  margin: 12px 0;
+}
+
+#canopy {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  list-style: none;
+  margin-right: 24px;
+}
+
+.title-and-year {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  margin-right: 24px;
+}
+
+.project-description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.teck-stacks {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.teck-stacks li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6070ff;
+  margin-right: 12px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  color: #396df2;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.btn:enabled {
+  background: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.btn:active {
+  background: #2230d2;
+  border-radius: 8px;
+}
+
+.btn:disabled {
+  color: #5e6c84;
+  background: #e5e5e5;
 }
