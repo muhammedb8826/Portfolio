@@ -59,11 +59,16 @@ nav .menu-bar {
   left: 50%;
   transform: translateX(-50%);
   width: 375px;
+  background: #f7f7f9;
+  display: grid;
+  place-items: center;
+  gap: 48px;
 }
 
 .content {
   padding: 0 24px;
   height: 590px;
+  background: #fff;
 }
 
 .content h1 {
@@ -103,7 +108,15 @@ nav .menu-bar {
 }
 
 .portfolio-list-section {
-  padding: 40px 40px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  width: 327px;
+  padding: 12px;
+}
+
+.portfolio-list-section img {
+  width: 100%;
 }
 
 .project-title {
@@ -205,7 +218,11 @@ nav .menu-bar {
 }
 
 .about-section {
-  padding: 24px 24px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  width: 327px;
+  padding: 12px;
 }
 
 .about-me-text {
@@ -240,6 +257,10 @@ nav .menu-bar {
   color: #000;
   padding: 24px 12px;
   border: 1px solid rd;
+}
+
+.skill-name-and-arrow span img {
+  width: 13px;
 }
 
 hr {
