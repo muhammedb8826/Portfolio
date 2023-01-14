@@ -109,6 +109,12 @@ nav .menu-bar {
   margin-right: 24px;
 }
 
+.cards {
+  display: grid;
+  place-items: center;
+  gap: 48px;
+}
+
 .portfolio-list-section {
   border: 1px solid #dfe1e6;
   background: #fff;
