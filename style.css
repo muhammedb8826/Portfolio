@@ -95,6 +95,7 @@ nav .menu-bar {
   list-style: none;
   padding: 0;
   display: flex;
+  margin-bottom: 12px;
 }
 
 .icons li {
@@ -201,4 +202,47 @@ nav .menu-bar {
 .btn:disabled {
   color: #5e6c84;
   background: #e5e5e5;
+}
+
+.about-section {
+  padding: 24px 24px;
+}
+
+.about-me-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+.about-me-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 12px 0;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-name-and-arrow {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  padding: 24px 12px;
+  border: 1px solid rd;
+}
+
+hr {
+  height: 1px;
+  background: #dfe1e6;
 }
