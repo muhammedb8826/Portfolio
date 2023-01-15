@@ -59,18 +59,11 @@ nav .menu-bar {
   left: 50%;
   transform: translateX(-50%);
   width: 375px;
-  background: #f7f7f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 48px;
 }
 
 .content {
   padding: 0 24px;
   height: 590px;
-  background: #fff;
 }
 
 .content h1 {
@@ -113,6 +106,8 @@ nav .menu-bar {
   display: grid;
   place-items: center;
   gap: 48px;
+  background: #f7f7f9;
+  padding: 48px 0;
 }
 
 .portfolio-list-section {
@@ -233,7 +228,6 @@ nav .menu-bar {
   border-radius: 16px;
   width: 327px;
   padding: 12px;
-  margin: 0 auto;
 }
 
 .about-me-text {
