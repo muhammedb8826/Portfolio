@@ -497,7 +497,7 @@ hr {
     display: grid;
     place-items: center;
     gap: 96px;
-    padding: 100px;
+    padding: 120px;
   }
 
   .portfolio-list-section {
@@ -506,7 +506,6 @@ hr {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
-    gap: 24px;
     padding: 24px;
     height: auto;
   }
@@ -530,9 +529,13 @@ hr {
 
   .portfolio-list-section .project-description-container {
     width: 50%;
-    padding: 12px;
+    padding: 24px;
     display: flex;
     gap: 24px;
+  }
+
+  .project-description-container .project-description {
+    max-width: 350px;
   }
 
   .about-section {
