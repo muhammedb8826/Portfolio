@@ -3,32 +3,32 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
 body {
   min-height: 100vh;
-  background-image: url("./assets/header-shapes-mobile.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f7f7f9;
+  padding: 0;
+  margin: 0;
 }
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 375px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 20px;
-  padding: 10px 0;
+  padding: 24px;
+  background: #fff;
 }
 
 .header a {
-  padding: 10px 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -37,7 +37,7 @@ body {
 }
 
 nav {
-  padding: 10px 24px;
+  height: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -48,22 +48,27 @@ nav {
 nav .menu-bar {
   height: 2px;
   width: 16px;
-  margin-bottom: 4px;
   background-color: #6070ff;
   border-radius: 5px;
 }
 
+.menu-item li {
+  display: none;
+}
+
 .main-section {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 375px;
+  background: #fff;
+  background-image: url("./assets/header-shapes-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 100px;
 }
 
 .content {
   padding: 0 24px;
-  height: 590px;
+  height: 633px;
 }
 
 .content h1 {
@@ -104,11 +109,12 @@ nav .menu-bar {
 }
 
 .cards {
+  width: 375px;
   display: grid;
   place-items: center;
-  gap: 48px;
+  gap: 96px;
   background: #f7f7f9;
-  padding: 48px 0;
+  padding: 96px 0;
 }
 
 .portfolio-list-section {
@@ -116,15 +122,27 @@ nav .menu-bar {
   background: #fff;
   border-radius: 16px;
   width: 327px;
+  height: 552px;
   padding: 12px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 24px;
 }
 
 .portfolio-list-section img {
   width: 100%;
+}
+
+.portfolio-list-section .desktop {
+  display: none;
+}
+
+.portfolio-list-section .project-description-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-title {
@@ -198,6 +216,7 @@ nav .menu-bar {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .btn:enabled {
@@ -225,18 +244,26 @@ nav .menu-bar {
 
 .about-section {
   background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  width: 327px;
-  padding: 12px;
+  border-top-right-radius: 100px;
+  width: 375px;
+  padding: 114px 24px;
+  display: grid;
+  gap: 24px;
+}
+
+.about-project-description-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
 }
 
 .about-me-text {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
+  padding-right: 60px;
   color: #172b4d;
 }
 
@@ -269,6 +296,16 @@ nav .menu-bar {
   width: 13px;
 }
 
+.skills .images ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.images .desktop {
+  display: none;
+}
+
 hr {
   background: #dfe1e6;
   border: none;
@@ -284,14 +321,17 @@ hr {
   background-origin: border-box;
   padding: 24px;
   padding-top: 190px;
+  border-top-left-radius: 100px;
+}
+
+.form-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 12px;
-  border-top-left-radius: 100px;
 }
 
-.form-section > h2 {
+.form-container h2 {
   height: 56px;
   font-weight: 700;
   font-size: 40px;
@@ -300,7 +340,7 @@ hr {
   text-align: center;
 }
 
-.form-section > p {
+.form-container p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -332,7 +372,7 @@ hr {
   color: #172b4d;
 }
 
-.form-section #form-text-area {
+.form-container #form-text-area {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -399,4 +439,162 @@ hr {
   bottom: 8px;
   background: #0d151e;
   border-radius: 11px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    width: 100%;
+    padding: 24px 154px;
+  }
+
+  nav .menu-bar {
+    display: none;
+  }
+
+  .menu-item {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 24px;
+    color: #6070ff;
+    list-style: none;
+  }
+
+  .menu-item li {
+    display: block;
+  }
+
+  .main-section {
+    width: 100%;
+    background-image: url("./assets/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    border-bottom-left-radius: 100px;
+    display: grid;
+    place-items: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 260px;
+    height: 718px;
+  }
+
+  .content h1 {
+    width: 40%;
+  }
+
+  .cards {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 96px;
+    padding: 142px;
+  }
+
+  .portfolio-list-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 48px;
+    padding: 24px;
+    height: auto;
+  }
+
+  .portfolio-list-section:hover {
+    box-shadow: 0 16px 16px rgb(209, 207, 207, 0.24);
+    cursor: pointer;
+  }
+
+  .portfolio-list-section img {
+    width: 50%;
+  }
+
+  .portfolio-list-section .mobile {
+    display: none;
+  }
+
+  .portfolio-list-section .desktop {
+    display: block;
+  }
+
+  .portfolio-list-section .project-description-container {
+    width: 50%;
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+  }
+
+  .about-section {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 142px;
+  }
+
+  .skills {
+    width: 60%;
+  }
+
+  .skills .images ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .skills .images ul > li img {
+    width: 100%;
+  }
+
+  .images .desktop {
+    display: block;
+  }
+
+  .images .mobile {
+    display: none;
+  }
+
+  .about-project-description-container {
+    width: 40%;
+  }
+
+  .form-section {
+    background: #6070ff;
+    background-image: url("./assets/contact-form-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 569px;
+  }
+
+  .info-form {
+    width: 85%;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-container #form-text-area {
+    width: 100%;
+  }
 }
