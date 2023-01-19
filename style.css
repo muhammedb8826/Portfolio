@@ -444,7 +444,7 @@ hr {
 @media (min-width: 768px) {
   .header {
     width: 100%;
-    padding: 24px 154px;
+    padding: 12px 154px;
   }
 
   nav .menu-bar {
@@ -468,11 +468,11 @@ hr {
     background-image: url("./assets/header-bg.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    background-attachment: fixed;
+    background-size: cover;
     border-bottom-left-radius: 100px;
     display: grid;
     place-items: center;
+    padding: 48px;
   }
 
   .content {
@@ -480,12 +480,16 @@ hr {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 260px;
-    height: 718px;
+    padding: 0 270px;
   }
 
   .content h1 {
     width: 40%;
+  }
+
+  #primary-text {
+    padding-right: 24px;
+    color: #344563;
   }
 
   .cards {
@@ -571,7 +575,6 @@ hr {
     background-image: url("./assets/contact-form-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     width: 100%;
     display: flex;
