@@ -503,8 +503,8 @@ hr {
   .portfolio-list-section {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: row;
     padding: 24px;
     height: auto;
