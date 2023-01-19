@@ -480,16 +480,16 @@ hr {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 270px;
+    max-width: 75%;
+    padding: 48px;
   }
 
   .content h1 {
-    width: 40%;
+    width: 400px;
   }
 
   #primary-text {
-    padding-right: 24px;
-    color: #344563;
+    width: 80%;
   }
 
   .cards {
@@ -497,7 +497,7 @@ hr {
     display: grid;
     place-items: center;
     gap: 96px;
-    padding: 142px;
+    padding: 100px;
   }
 
   .portfolio-list-section {
@@ -506,7 +506,7 @@ hr {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
-    gap: 48px;
+    gap: 24px;
     padding: 24px;
     height: auto;
   }
@@ -530,7 +530,7 @@ hr {
 
   .portfolio-list-section .project-description-container {
     width: 50%;
-    padding: 24px;
+    padding: 12px;
     display: flex;
     gap: 24px;
   }
