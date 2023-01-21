@@ -28,12 +28,23 @@ body {
   background: #fff;
 }
 
-.header a {
+.header > a {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
   text-decoration: none;
+  animation-name: logo-rotation;
+  animation-duration: 3s;
+}
+
+@keyframes logo-rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 nav {
@@ -565,6 +576,11 @@ hr {
     width: 100%;
   }
 
+  .skills .images ul > li img:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+  }
+
   .images .desktop {
     display: block;
   }
@@ -594,6 +610,9 @@ hr {
     justify-content: center;
     align-items: center;
     width: 569px;
+  }
+  .form-container p:hover {
+    transform: translate(10px);
   }
 
   .info-form {
