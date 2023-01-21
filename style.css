@@ -28,6 +28,15 @@ body {
   background: #fff;
 }
 
+@keyframes logo-rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .header > a {
   font-weight: 700;
   font-size: 18px;
@@ -36,15 +45,6 @@ body {
   text-decoration: none;
   animation-name: logo-rotation;
   animation-duration: 3s;
-}
-
-@keyframes logo-rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 nav {
@@ -228,6 +228,7 @@ nav .menu-bar {
   font-size: 17px;
   line-height: 24px;
   cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .btn:enabled {
@@ -237,7 +238,7 @@ nav .menu-bar {
 }
 
 .btn:hover {
-  background: #6070ff;
+  background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
@@ -412,6 +413,7 @@ hr {
   background: #fff;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .form-button:enabled {
