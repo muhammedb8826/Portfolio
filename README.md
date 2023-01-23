@@ -33,6 +33,7 @@
 **Portfolio-setup-and-mobile-first** is a static page that has been
 
 ## 🛠 Built With <a name="built-with"></a>
+
 - HTML, CSS
 - Git, Github
 - VSCode
@@ -87,9 +88,10 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- Live demo to be added later
 
-> Link of this project.
+- You can see the project online via this link 👉[view](https://muhammedb8826.github.io/Portfolio-setup-and-mobile-first/)
+
+> Link to github repository.
 
 - [portfolio-setup-and-mobile-first](https://github.com/muhammedb8826/Portfolio-setup-and-mobile-first)
 
@@ -98,12 +100,6 @@
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-
-
-
-
-
 
 To get a local copy up and running, follow these steps.
 
@@ -128,8 +124,8 @@ cd Portfolio-setup-and-mobile-first
 
 Install project dependencies in this project with:
 
-  npm install
-  
+npm install
+
 ### Usage
 
 To run the project, open the project with live server and visit http://localhost:5500
@@ -144,15 +140,13 @@ After pushing the changes on github, merge your pull request and let github acti
 ### Deployment
 
 Check for the tests when you generate a pull request and fix errors, if any.
-For stylelint errors run:<code>sudo npx stylelint "**/*.{css,scss}" --fix</code> for automatic fix.
+For stylelint errors run:<code>sudo npx stylelint "\*_/_.{css,scss}" --fix</code> for automatic fix.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-
 
 👤 **Muhammed Berisso**
 
@@ -201,7 +195,6 @@ If you like this project give a ⭐️
 I would like to thank Microverse for teaching me how to code
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LICENSE -->
 
