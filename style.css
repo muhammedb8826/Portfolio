@@ -48,6 +48,19 @@ body {
   animation-duration: 3s;
 }
 
+.header > a:hover {
+  color: #7f8cff;
+}
+
+.header > a:active {
+  color: #2230d2;
+  border-radius: 8px;
+}
+
+.header > a:disabled {
+  color: #5e6c84;
+}
+
 nav {
   height: 20px;
   display: flex;
@@ -229,7 +242,7 @@ nav .menu-bar {
   font-size: 17px;
   line-height: 24px;
   cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 1s ease;
 }
 
 .btn:enabled {
@@ -240,7 +253,6 @@ nav .menu-bar {
 
 .btn:hover {
   background-color: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
 }
@@ -469,12 +481,29 @@ hr {
     display: grid;
     grid-auto-flow: column;
     gap: 24px;
-    color: #6070ff;
     list-style: none;
   }
 
   .menu-item li {
     display: block;
+  }
+
+  .menu-item li > a {
+    text-decoration: none;
+    color: #6070ff;
+  }
+
+  .menu-item li > a:hover {
+    color: #7f8cff;
+  }
+
+  .menu-item li > a:active {
+    color: #2230d2;
+    border-radius: 8px;
+  }
+
+  .menu-item li > a:disabled {
+    color: #5e6c84;
   }
 
   .main-section {
