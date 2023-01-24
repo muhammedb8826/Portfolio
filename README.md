@@ -149,6 +149,7 @@ For stylelint errors run:<code>sudo npx stylelint "\*_/_.{css,scss}" --fix</code
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Muhammed Berisso**
+👤 **Clinton Younge**
 
 - GitHub: [@githubhandle](https://github.com/muhammedb8826)
 - Twitter: [@twitterhandle](https://twitter.com/muhammedb8826)
