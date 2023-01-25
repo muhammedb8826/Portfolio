@@ -478,11 +478,11 @@ hr {
 
   .menu-item li > a {
     text-decoration: none;
-    color: #344563;
+    color: #5564eb;
   }
 
   .menu-item li > a:hover {
-    color: #5564eb;
+    color: #4d5bd9;
   }
 
   .menu-item li > a:active {
