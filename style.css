@@ -28,24 +28,25 @@ body {
   background: #fff;
 }
 
-@keyframes logo-rotation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .header > a {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
+  color: #5564eb;
   text-decoration: none;
-  animation-name: logo-rotation;
-  animation-duration: 3s;
+}
+
+.header > a:hover {
+  color: #4d5bd9;
+}
+
+.header > a:active {
+  color: #2230d2;
+  border-radius: 8px;
+}
+
+.header > a:disabled {
+  color: #5e6c84;
 }
 
 nav {
@@ -60,7 +61,7 @@ nav {
 nav .menu-bar {
   height: 2px;
   width: 16px;
-  background-color: #6070ff;
+  background-color: #5564eb;
   border-radius: 5px;
 }
 
@@ -105,7 +106,7 @@ nav .menu-bar {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #4d5bd9;
   margin-bottom: 12px;
 }
 
@@ -182,7 +183,7 @@ nav .menu-bar {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: #454b54;
   margin-right: 24px;
 }
 
@@ -210,7 +211,7 @@ nav .menu-bar {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  color: #6070ff;
+  color: #5564eb;
   margin-right: 12px;
 }
 
@@ -229,18 +230,17 @@ nav .menu-bar {
   font-size: 17px;
   line-height: 24px;
   cursor: pointer;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 1s ease;
 }
 
 .btn:enabled {
   background: #fff;
-  border: 1px solid #7f8cff;
+  border: 1px solid #4d5bd9;
   border-radius: 8px;
 }
 
 .btn:hover {
-  background-color: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  background-color: #2d40e6;
   border-radius: 8px;
   color: #fff;
 }
@@ -326,7 +326,7 @@ hr {
 }
 
 .form-section {
-  background: #6070ff;
+  background: #5564eb;
   width: 375px;
   background-image: url("./assets/form-shape-image.png");
   background-repeat: no-repeat;
@@ -408,7 +408,7 @@ hr {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #5564eb;
   width: 140px;
   height: 48px;
   background: #fff;
@@ -419,12 +419,12 @@ hr {
 
 .form-button:enabled {
   background: #fff;
-  border: 1px solid #7f8cff;
+  border: 1px solid #fff;
   border-radius: 8px;
 }
 
 .form-button:hover {
-  background: #6070ff;
+  background: #5564eb;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
@@ -469,12 +469,29 @@ hr {
     display: grid;
     grid-auto-flow: column;
     gap: 24px;
-    color: #6070ff;
     list-style: none;
   }
 
   .menu-item li {
     display: block;
+  }
+
+  .menu-item li > a {
+    text-decoration: none;
+    color: #5564eb;
+  }
+
+  .menu-item li > a:hover {
+    color: #4d5bd9;
+  }
+
+  .menu-item li > a:active {
+    color: #2230d2;
+    border-radius: 8px;
+  }
+
+  .menu-item li > a:disabled {
+    color: #5e6c84;
   }
 
   .main-section {
@@ -597,7 +614,7 @@ hr {
   }
 
   .form-section {
-    background: #6070ff;
+    background: #5564eb;
     background-image: url("./assets/contact-form-background.png");
     background-repeat: no-repeat;
     background-size: cover;

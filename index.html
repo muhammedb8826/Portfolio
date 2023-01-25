@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-setup-and-mobile-first</title>
+    <title>Muhammed's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,9 +15,9 @@
         <div class="menu-bar"></div>
         <div class="menu-bar"></div>
         <ul class="menu-item">
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -41,13 +41,13 @@
             /></a>
           </li>
           <li>
-            <a href="#"><img src="./assets/Vector (2).svg" alt="m" /></a>
+            <a href="#"><img src="./assets/Vector (2).svg" alt="medium" /></a>
           </li>
           <li>
             <a href="#"><img src="./assets/Vector (1).svg" alt="github" /></a>
           </li>
           <li>
-            <a href="#"><img src="./assets/Vector (3).svg" alt="s" /></a>
+            <a href="#"><img src="./assets/Vector (3).svg" alt="angelist" /></a>
           </li>
         </ul>
       </section>
@@ -56,12 +56,12 @@
       <section class="portfolio-list-section">
         <img
           src="./assets/Snapshoot Portfolio.png"
-          alt="Snapshoot-1"
+          alt="Snapshoot of project one"
           class="mobile"
         />
         <img
           src="./assets/Snapshoot Portfolio1.png"
-          alt="Snapshoot-1"
+          alt="Snapshoot of project one"
           class="desktop"
         />
         <section class="project-description-container">
@@ -86,7 +86,7 @@
       <section class="portfolio-list-section">
         <img
           src="./assets/Snapshoot Portfolio (1).png"
-          alt="Snapshoot-1"
+          alt="Snapshoot for project two"
           class="mobile"
         />
         <section class="project-description-container">
@@ -109,19 +109,19 @@
         </section>
         <img
           src="./assets/Snapshoot Portfolio2.png"
-          alt="Snapshoot-1"
+          alt="Snapshoot for project two"
           class="desktop"
         />
       </section>
       <section class="portfolio-list-section">
         <img
           src="./assets/Snapshoot Portfolio (2).png"
-          alt="Snapshoot-1"
+          alt="Snapshoot for project three"
           class="mobile"
         />
         <img
           src="./assets/Snapshoot Portfolio3.png"
-          alt="Snapshoot-1"
+          alt="Snapshoot for project three"
           class="desktop"
         />
         <section class="project-description-container">
@@ -146,7 +146,7 @@
       <section class="portfolio-list-section">
         <img
           src="./assets/Snapshoot Portfolio (3).png"
-          alt="Snapshoot-1"
+          alt="Snapshoot for project four"
           class="mobile"
         />
         <section class="project-description-container">
@@ -169,12 +169,12 @@
         </section>
         <img
           src="./assets/Snapshoot Portfolio4.png"
-          alt="Snapshoot-1"
+          alt="Snapshoot for project four"
           class="desktop"
         />
       </section>
     </section>
-    <section class="about-section">
+    <section class="about-section" id="about">
       <section class="about-project-description-container">
         <h2 class="about-me-text">About Myself</h2>
         <p class="about-me-description">
@@ -212,21 +212,23 @@
         </li>
         <li class="images">
           <ul>
-            <li class="mobile"><img src="./assets/Frame 9.png" alt="js" /></li>
             <li class="mobile">
-              <img src="./assets/Frame 10.png" alt="html" />
+              <img src="./assets/Frame 9.png" alt="js-icon" />
             </li>
             <li class="mobile">
-              <img src="./assets/Frame 11.png" alt="css" />
+              <img src="./assets/Frame 10.png" alt="html-icon" />
+            </li>
+            <li class="mobile">
+              <img src="./assets/Frame 11.png" alt="css-icon" />
             </li>
             <li class="desktop">
-              <img src="./assets/Frame 99.png" alt="js" />
+              <img src="./assets/Frame 99.png" alt="js-icon" />
             </li>
             <li class="desktop">
-              <img src="./assets/Frame 100.png" alt="html" />
+              <img src="./assets/Frame 100.png" alt="html-icon" />
             </li>
             <li class="desktop">
-              <img src="./assets/Frame 101.png" alt="css" />
+              <img src="./assets/Frame 101.png" alt="css-icon" />
             </li>
           </ul>
         </li>
@@ -244,7 +246,7 @@
         <hr />
       </ul>
     </section>
-    <footer class="form-section">
+    <footer class="form-section" id="contact">
       <section class="form-container">
         <h2>Contact me</h2>
         <p>
@@ -257,19 +259,24 @@
           class="info-form"
           method="post"
         >
+          <label for="your-name" hidden>What's your name</label>
           <input
             type="text"
             placeholder="Yeremias"
             required
+            id="your-name"
             class="input-text"
             maxlength="30"
           />
+          <label for="email" hidden>what's your email</label>
           <input
             type="email"
             placeholder="natajayanj14@gmail.com"
+            id="email"
             class="input-text"
             required
           />
+          <label for="form-text-area" hidden>what's your message</label>
           <textarea
             name="form-description"
             id="form-text-area"
