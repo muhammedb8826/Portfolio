@@ -49,6 +49,27 @@ body {
   color: #5e6c84;
 }
 
+#menuBtn {
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  width: 30px;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 6px;
+}
+
+.menu-bar {
+  height: 2px;
+  width: 16px;
+  background-color: #5564eb;
+  border-radius: 5px;
+}
+
+.active {
+  display: none;
+}
+
 nav {
   height: 20px;
   display: flex;
@@ -58,16 +79,6 @@ nav {
   cursor: pointer;
 }
 
-nav .menu-bar {
-  height: 2px;
-  width: 16px;
-  background-color: #5564eb;
-  border-radius: 5px;
-}
-
-.menu-item li {
-  display: none;
-}
 
 .main-section {
   width: 375px;
@@ -461,7 +472,7 @@ hr {
     padding: 12px 154px;
   }
 
-  nav .menu-bar {
+  .menu-bar {
     display: none;
   }
 
