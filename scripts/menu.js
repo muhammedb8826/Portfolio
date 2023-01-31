@@ -9,8 +9,8 @@ menuBtn.onclick = () => {
 };
 for (let i = 0; i < menuLink.length; i += 1) {
   menuLink[i].addEventListener('click', () => {
-    nav.classList.toggle('active');
-    menuBtn.classList.toggle('change');
-    menuBtn.classList.toggle('change-bg');
+    nav.classList.remove('active');
+    menuBtn.classList.remove('change');
+    menuBg.classList.remove('change-bg');
   });
 }
