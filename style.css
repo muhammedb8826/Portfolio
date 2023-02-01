@@ -155,7 +155,7 @@ nav.active .menu-items li {
 }
 
 .main-section {
-  width: 375px;
+  width: 100%;
   background: #fff;
   background-image: url("./assets/header-shapes-mobile.png");
   background-repeat: no-repeat;
@@ -196,7 +196,7 @@ nav.active .menu-items li {
 }
 
 .cards {
-  width: 375px;
+  width: 100%;
   display: grid;
   place-items: center;
   gap: 96px;
@@ -208,8 +208,7 @@ nav.active .menu-items li {
   border: 1px solid #dfe1e6;
   background: #fff;
   border-radius: 16px;
-  width: 327px;
-  height: 552px;
+  width: 75%;
   padding: 12px;
   display: flex;
   align-items: flex-start;
@@ -227,9 +226,10 @@ nav.active .menu-items li {
 .portfolio-list-section .project-description-container {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   align-items: flex-start;
   flex-direction: column;
-  height: 100%;
+  padding: 1rem;
 }
 
 .project-title {
@@ -311,7 +311,7 @@ nav.active .menu-items li {
 .about-section {
   background: #fff;
   border-top-right-radius: 100px;
-  width: 375px;
+  width: 100%;
   padding: 114px 24px;
   display: grid;
   gap: 24px;
@@ -379,7 +379,7 @@ hr {
 
 .form-section {
   background: #5564eb;
-  width: 375px;
+  width: 100%;
   background-image: url("./assets/form-shape-image.png");
   background-repeat: no-repeat;
   background-size: cover;
