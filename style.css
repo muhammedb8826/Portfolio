@@ -154,6 +154,20 @@ nav.active .menu-items li {
   z-index: 1;
 }
 
+.pop-up-section {
+  display: none;
+}
+
+.pop-up-section.show {
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  width: 80%;
+  left: 0;
+  background-color: #2d40e6;
+  height: 300px;
+}
+
 .main-section {
   width: 100%;
   background: #fff;
