@@ -609,6 +609,17 @@ hr {
   border-radius: 11px;
 }
 
+#errorTxt {
+  color: red;
+  border: 1px solid lightcoral;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: .5rem;
+  text-align: center;
+  background-color: #FFF4F4;
+  display: none;
+}
+
 @media (min-width: 768px) {
   .header {
     display: flex;
@@ -673,6 +684,11 @@ hr {
     display: grid;
     place-items: center;
     padding: 48px;
+  }
+
+  .pop-up-section {
+    display: flex;
+    flex-direction: row;
   }
 
   .content {

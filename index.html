@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="scripts/app.js" defer></script>
     <script src="scripts/works.js" type="module"></script>
+    <script src="scripts/form-validation.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -148,6 +149,7 @@
           action="https://formspree.io/f/xzbqzgww"
           class="info-form"
           method="post"
+          id="form"
         >
           <label for="your-name" hidden>What's your name</label>
           <input
@@ -176,7 +178,8 @@
             placeholder="Write your message here"
             required
           ></textarea>
-          <button class="form-button" type="submit">Get in Touch</button>
+          <div id="errorTxt">Please use lowercase letters only for a valid email address!</div>
+          <button class="form-button" type="submit" id="submitBtn">Get in Touch</button>
         </form>
         <div class="line">
           <div></div>
