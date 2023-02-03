@@ -150,6 +150,8 @@ For stylelint errors run:<code>sudo npx stylelint "\*_/_.{css,scss}" --fix</code
 
 👤 **Muhammed Berisso**
 👤 **Clinton Younge**
+👤 **JOSE RAUL MOJICA**
+👤 **Alex Muñoz**
 
 - GitHub: [@githubhandle](https://github.com/muhammedb8826)
 - Twitter: [@twitterhandle](https://twitter.com/muhammedb8826)
@@ -201,6 +203,6 @@ I would like to thank Microverse for teaching me how to code
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT License](https://github.com/muhammedb8826/Portfolio-setup-and-mobile-first/blob/portfolio-header-section/LICENSE.md) licensed
+This project is [MIT License](https://github.com/muhammedb8826/Portfolio-setup-and-mobile-first/blob/license/LICENSE) licensed
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
