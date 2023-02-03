@@ -150,6 +150,8 @@ For stylelint errors run:<code>sudo npx stylelint "\*_/_.{css,scss}" --fix</code
 
 👤 **Muhammed Berisso**
 👤 **Clinton Younge**
+👤 **JOSE RAUL MOJICA**
+👤 **Alex Muñoz**
 
 - GitHub: [@githubhandle](https://github.com/muhammedb8826)
 - Twitter: [@twitterhandle](https://twitter.com/muhammedb8826)
