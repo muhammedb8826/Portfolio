@@ -614,9 +614,9 @@ hr {
   border: 1px solid lightcoral;
   border-radius: 5px;
   font-size: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
-  background-color: #FFF4F4;
+  background-color: #fff4f4;
   display: none;
 }
 
