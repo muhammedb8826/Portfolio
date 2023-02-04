@@ -180,7 +180,7 @@ nav.active .menu-items li {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  width: 90%;
+  width: 95%;
   height: 95%;
   overflow: scroll;
   border-radius: 16px;
@@ -290,8 +290,8 @@ nav.active .menu-items li {
 
 .pop-up-section.show .toggle-to {
   position: absolute;
-  top: 1rem;
-  right: 2rem;
+  top: 0.7rem;
+  right: 0.7rem;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   border-radius: 16px;
@@ -733,8 +733,11 @@ hr {
   /* popup section desktop */
 
   .pop-up-section.show {
+    position: absolute;
     width: 80%;
     height: 85%;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 
   .pop-up-section.show .project-description-container-popup {
@@ -760,7 +763,7 @@ hr {
   }
 
   .pop-up-section.show .toggle-to {
-    right: 2rem;
+    right: 1.5rem;
   }
 
   .portfolio-list-section img {
