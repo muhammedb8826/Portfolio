@@ -6,8 +6,8 @@ const data = [
     ],
     featured: [{ feature1: 'CANOPY', feature2: 'Back End Dev', year: 2023 }],
     image: [
-      { imageSrc: '../assets/m-project-1.png', imageAlt: 'project-1' },
-      { imageSrc: '../assets/project-1.png', imageAlt: 'project-1' },
+      { imageSrc: './assets/m-project-1.png', imageAlt: 'project-1' },
+      { imageSrc: './assets/project-1.png', imageAlt: 'project-1' },
     ],
     technologies: [{ teck1: 'html', teck2: 'css', teck3: 'javascript' }],
     liveLink: [],
@@ -20,8 +20,8 @@ const data = [
     ],
     featured: [{ feature1: 'CANOPY', feature2: 'Back End Dev', year: 2023 }],
     image: [
-      { imageSrc: '../assets/m-project-2.png', imageAlt: 'project-2' },
-      { imageSrc: '../assets/project-2.png', imageAlt: 'project-2' },
+      { imageSrc: './assets/m-project-2.png', imageAlt: 'project-2' },
+      { imageSrc: './assets/project-2.png', imageAlt: 'project-2' },
     ],
     technologies: [{ teck1: 'html', teck2: 'css', teck3: 'javascript' }],
     liveLink: [],
@@ -34,8 +34,8 @@ const data = [
     ],
     featured: [{ feature1: 'CANOPY', feature2: 'Back End Dev', year: 2023 }],
     image: [
-      { imageSrc: '../assets/m-project-3.png', imageAlt: 'project-3' },
-      { imageSrc: '../assets/project-3.png', imageAlt: 'project-3' },
+      { imageSrc: './assets/m-project-3.png', imageAlt: 'project-3' },
+      { imageSrc: './assets/project-3.png', imageAlt: 'project-3' },
     ],
     technologies: [{ teck1: 'html', teck2: 'css', teck3: 'javascript' }],
     liveLink: [],
@@ -48,8 +48,8 @@ const data = [
     ],
     featured: [{ feature1: 'CANOPY', feature2: 'Back End Dev', year: 2023 }],
     image: [
-      { imageSrc: '../assets/m-project-4.png', imageAlt: 'project-4' },
-      { imageSrc: '../assets/project-4.png', imageAlt: 'project-4' },
+      { imageSrc: './assets/m-project-4.png', imageAlt: 'project-4' },
+      { imageSrc: './assets/project-4.png', imageAlt: 'project-4' },
     ],
     technologies: [{ teck1: 'html', teck2: 'css', teck3: 'javascript' }],
     liveLink: [],
