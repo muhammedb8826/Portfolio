@@ -8,6 +8,7 @@ const cards = document.getElementById('portfolio');
 for (let i = 0; i <= data.length - 1; i += 1) {
   const section = document.createElement('section');
   section.className = 'portfolio-list-section';
+  section.setAttribute('id', `pop-up${i}`);
   const image = document.createElement('img');
   const image2 = document.createElement('img');
   image.className = 'mobile';
@@ -55,7 +56,6 @@ for (let i = 0; i <= data.length - 1; i += 1) {
   button.textContent = 'See Project';
   const popUpSection = document.createElement('div');
   popUpSection.className = 'pop-up-section';
-  popUpSection.setAttribute('id', `pop-up${i}`);
   popUpSection.append(image, image2);
 
   div.append(h2, ul1, p, ul2, button);
