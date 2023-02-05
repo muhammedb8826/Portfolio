@@ -1,9 +1,9 @@
 import project from './db.js';
 
 const data = project;
+const body = document.getElementsByTagName('BODY')[0];
 const main = document.querySelector('.main-section');
 const cards = document.getElementById('portfolio');
-const menuBtnX = document.getElementById('menuBtnX');
 
 for (let i = 0; i <= data.length - 1; i += 1) {
   const section = document.createElement('section');
@@ -64,19 +64,14 @@ for (let i = 0; i <= data.length - 1; i += 1) {
   main.append(popUpSection);
 }
 
-const btn0 = document.getElementById(`btn${0}`);
-const btn1 = document.getElementById(`btn${1}`);
-const btn2 = document.getElementById(`btn${2}`);
-const btn3 = document.getElementById(`btn${3}`);
-const popUp0 = document.getElementById(`pop-up${0}`);
-const popUp1 = document.getElementById(`pop-up${1}`);
-const popUp2 = document.getElementById(`pop-up${2}`);
-const popUp3 = document.getElementById(`pop-up${3}`);
-const popUpBg = document.querySelector('.popup-bg');
+const elements = document.querySelectorAll('.btn');
+const popup = document.querySelectorAll('.pop-up-section');
+const popUpBg = document.getElementById('popUp-bg');
 const image = document.createElement('img');
 const image2 = document.createElement('img');
 const div = document.createElement('div');
 const div1 = document.createElement('div');
+const div2 = document.createElement('div');
 const h2 = document.createElement('h2');
 const ul1 = document.createElement('ul');
 const li1 = document.createElement('li');
@@ -88,68 +83,74 @@ const li11 = document.createElement('li');
 const li22 = document.createElement('li');
 const li33 = document.createElement('li');
 const seeLive = document.createElement('a');
+seeLive.setAttribute('href', 'https://muhammedb8826.github.io/Portfolio-setup-and-mobile-first/');
 const seeSource = document.createElement('a');
+seeSource.setAttribute('href', 'https://github.com/muhammedb8826/Portfolio-setup-and-mobile-first');
 const githubIcon = document.createElement('img');
 const liveIcon = document.createElement('img');
+const popUpTogglerBtn = document.createElement('a');
 
-btn0.addEventListener('click', () => {
-  popUp0.classList.toggle('show');
-  popUpBg.classList.toggle('show');
-  menuBtnX.classList.toggle('show');
-  image.className = 'mobile';
-  image.setAttribute('src', `${data[0].image[0].imageSrc}`);
-  image.setAttribute('alt', `${data[0].image[0].imageAlt}`);
-  image.className = 'mobile';
-  image2.setAttribute('src', `${data[0].image[1].imageSrc}`);
-  image2.setAttribute('alt', `${data[0].image[1].imageAlt}`);
-  image2.className = 'desktop';
-  div.className = 'project-description-container';
-  h2.className = 'project-title';
-  h2.textContent = `${data[0].name}`;
-  ul1.className = 'canopy-list';
-  li1.className = 'canopy';
-  li1.textContent = `${data[0].featured[0].feature1}`;
-  li2.className = 'title-and-year';
-  li2.textContent = `${data[0].featured[0].feature2}`;
-  li3.className = 'title-and-year';
-  li3.textContent = `${data[0].featured[0].year}`;
-  p.className = 'project-description';
-  p.textContent = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
-  ul2.className = 'teck-stacks';
-  li11.className = 'canopy';
-  li11.textContent = `${data[0].technologies[0].teck1}`;
-  li22.className = 'title-and-year';
-  li22.textContent = `${data[0].technologies[0].teck2}`;
-  li33.className = 'title-and-year';
-  li33.textContent = `${data[0].technologies[0].teck3}`;
-  div1.className = 'live-and-source-btn';
-  seeLive.className = 'btn';
-  seeSource.className = 'btn';
-  seeLive.textContent = 'See Live';
-  seeSource.textContent = 'See Source';
-  liveIcon.setAttribute('src', '../assets/live-icon.png');
-  liveIcon.className = 'live-icon';
-  seeLive.append(liveIcon);
-  githubIcon.setAttribute('src', '../assets/github-icon.png');
-  githubIcon.className = 'github-icon';
-  seeSource.append(githubIcon);
-  ul2.append(li11, li22, li33);
-  ul1.append(li1, li2, li3);
-  div.append(p, ul2);
-  div1.append(seeLive, seeSource);
-  popUp0.append(h2, ul1, image, image2, div, div1);
-});
-btn1.addEventListener('click', () => {
-  popUp1.classList.toggle('show');
-});
-btn2.addEventListener('click', () => {
-  popUp2.classList.toggle('show');
-});
-btn3.addEventListener('click', () => {
-  popUp3.classList.toggle('show');
-});
-menuBtnX.addEventListener('click', () => {
-  popUp0.classList.toggle('show');
-  popUpBg.classList.toggle('show');
-  menuBtnX.classList.toggle('show');
+for (let i = 0; i < data.length; i += 1) {
+  elements[i].addEventListener('click', () => {
+    body.classList.add('show');
+    popUpTogglerBtn.className = 'toggle-to';
+    popUpTogglerBtn.textContent = 'X';
+    popUpTogglerBtn.setAttribute('href', `#pop-up${i}`);
+    popup[i].classList.add('show');
+    popUpBg.classList.add('show');
+    window.scrollTo(0, 0);
+    image.className = 'mobile';
+    image.setAttribute('src', `${data[i].image[0].imageSrc}`);
+    image.setAttribute('alt', `${data[i].image[0].imageAlt}`);
+    image.className = 'mobile';
+    image2.setAttribute('src', `${data[i].image[1].imageSrc}`);
+    image2.setAttribute('alt', `${data[i].image[1].imageAlt}`);
+    image2.className = 'desktop';
+    div1.className = 'techs-and-buttons';
+    div.className = 'project-description-container-popup';
+    h2.className = 'project-title';
+    h2.textContent = `${data[i].name}`;
+    ul1.className = 'canopy-list';
+    li1.className = 'canopy';
+    li1.textContent = `${data[i].featured[0].feature1}`;
+    li2.className = 'title-and-year';
+    li2.textContent = `${data[i].featured[0].feature2}`;
+    li3.className = 'title-and-year';
+    li3.textContent = `${data[i].featured[0].year}`;
+    p.className = 'project-description';
+    p.textContent = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
+    ul2.className = 'teck-stacks';
+    li11.className = 'canopy';
+    li11.textContent = `${data[i].technologies[0].teck1}`;
+    li22.className = 'title-and-year';
+    li22.textContent = `${data[i].technologies[0].teck2}`;
+    li33.className = 'title-and-year';
+    li33.textContent = `${data[i].technologies[0].teck3}`;
+    div2.className = 'live-and-source-btn';
+    seeLive.className = 'btns';
+    seeSource.className = 'btns';
+    seeLive.textContent = 'See Live';
+    seeSource.textContent = 'See Source';
+    liveIcon.setAttribute('src', '../assets/live-icon.png');
+    liveIcon.className = 'live-icon';
+    seeLive.append(liveIcon);
+    githubIcon.setAttribute('src', '../assets/github-icon.png');
+    githubIcon.className = 'github-icon';
+    seeSource.append(githubIcon);
+    ul2.append(li11, li22, li33);
+    ul1.append(li1, li2, li3);
+    div2.append(seeLive, seeSource);
+    div1.append(ul2, div2);
+    div.append(p, div1);
+    popup[i].append(h2, ul1, image, image2, div, popUpTogglerBtn);
+    body.appendChild(popup[i]);
+  });
+}
+
+popUpTogglerBtn.addEventListener('click', () => {
+  for (let i = 0; i < data.length; i += 1) {
+    body.classList.remove('show');
+    popup[i].classList.remove('show');
+    popUpBg.classList.remove('show');
+  }
 });
