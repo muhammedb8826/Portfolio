@@ -131,10 +131,10 @@ for (let i = 0; i < data.length; i += 1) {
     seeSource.className = 'btns';
     seeLive.textContent = 'See Live';
     seeSource.textContent = 'See Source';
-    liveIcon.setAttribute('src', '../assets/live-icon.png');
+    liveIcon.setAttribute('src', './assets/live-icon.png');
     liveIcon.className = 'live-icon';
     seeLive.append(liveIcon);
-    githubIcon.setAttribute('src', '../assets/github-icon.png');
+    githubIcon.setAttribute('src', './assets/github-icon.png');
     githubIcon.className = 'github-icon';
     seeSource.append(githubIcon);
     ul2.append(li11, li22, li33);
