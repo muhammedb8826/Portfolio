@@ -89,7 +89,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- You can see the project online via this link 👉[view](https://muhammedb8826.github.io/Portfolio-setup-and-mobile-first/)
+- You can see the project online via this link 👉[view](https://muhammedb8826.github.io/Portfolio/)
 
 > Link to github repository.
 
