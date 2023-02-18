@@ -93,7 +93,7 @@
 
 > Link to github repository.
 
-- [portfolio-setup-and-mobile-first](https://github.com/muhammedb8826/Portfolio-setup-and-mobile-first)
+- [portfolio-setup-and-mobile-first](https://github.com/muhammedb8826/Portfolio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +103,7 @@
 
 To get a local copy up and running, follow these steps.
 
-git clone https://github.com/muhammedb8826/Portfolio-setup-and-mobile-first.git
+git clone https://github.com/muhammedb8826/Portfolio.git
 
 ### Prerequisites
 
@@ -116,7 +116,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/muhammedb8826/Portfolio-setup-and-mobile-first.git
+git clone https://github.com/muhammedb8826/Portfolio.git
 
 cd Portfolio-setup-and-mobile-first
 
@@ -177,7 +177,7 @@ For stylelint errors run:<code>sudo npx stylelint "\*_/_.{css,scss}" --fix</code
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/muhammedb8826/Portfolio-setup-and-mobile-first/issues).
+Feel free to check the [issues page](https://github.com/muhammedb8826/Portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
