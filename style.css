@@ -26,8 +26,7 @@ body.show {
 .header {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   padding: 1.5rem;
   background: #fff;
@@ -139,7 +138,7 @@ nav.active .menu-items li {
   width: 100%;
   backdrop-filter: blur(8px);
   background-color: #6070ff;
-  height: 700px;
+  height: 100vh;
   mix-blend-mode: multiply;
 }
 
@@ -366,7 +365,6 @@ nav.active .menu-items li {
 }
 
 .main-section {
-  width: 100%;
   background: #fff;
   background-image: url("./assets/header-shapes-mobile.png");
   background-repeat: no-repeat;
@@ -381,7 +379,7 @@ nav.active .menu-items li {
 }
 
 .content h1 {
-  width: 327px;
+  width: 50vw;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -689,11 +687,12 @@ hr {
 
 @media (min-width: 768px) {
   .header {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: row;
-    width: 100%;
     padding: 1.5rem 154px;
   }
 
@@ -836,15 +835,15 @@ hr {
     align-items: flex-start;
     flex-direction: column;
     max-width: 75%;
-    padding: 48px;
+    padding: 1rem;
   }
 
   .content h1 {
-    width: 400px;
+    width: 40%;
   }
 
   #primary-text {
-    width: 80%;
+    max-width: 75%;
   }
 
   .cards {
