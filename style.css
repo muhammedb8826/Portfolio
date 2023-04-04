@@ -257,34 +257,20 @@ nav.active .menu-items li {
   background: #e5e5e5;
 }
 
-.toggle-to:enabled {
-  background: #fff;
-  border: 1px solid #4d5bd9;
-  border-radius: 8px;
-}
-
-.toggle-to:hover {
-  background-color: #2d40e6;
-  border-radius: 8px;
-  color: #fff;
-}
-
-.toggle-to:active {
-  background: #2230d2;
-  border-radius: 8px;
-}
-
-.toggle-to:disabled {
-  color: #5e6c84;
-  background: #e5e5e5;
-}
-
 .pop-up-section.show .mobile {
   display: block;
 }
 
 .pop-up-section.show .desktop {
   display: none;
+}
+
+.portfolio-list-section img {
+  width: 100%;
+}
+
+.skill-name-and-arrow span img {
+  width: 13px;
 }
 
 .pop-up-section.show .toggle-to {
@@ -301,6 +287,10 @@ nav.active .menu-items li {
   line-height: 24px;
   cursor: pointer;
   transition: background-color 1s ease;
+}
+
+.pop-up-section.show .toggle-to img {
+  width: 35px;
 }
 
 .bar1,
@@ -342,20 +332,12 @@ nav.active .menu-items li {
   gap: 1rem;
 }
 
-.portfolio-list-section img {
-  width: 100%;
-}
-
 .portfolio-list-section .project-description-container {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   align-items: flex-start;
   flex-direction: column;
-}
-
-.skill-name-and-arrow span img {
-  width: 13px;
 }
 
 .skills .images ul {

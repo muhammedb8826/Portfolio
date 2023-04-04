@@ -89,12 +89,12 @@ seeSource.setAttribute('href', 'https://github.com/muhammedb8826/Portfolio');
 const githubIcon = document.createElement('img');
 const liveIcon = document.createElement('img');
 const popUpTogglerBtn = document.createElement('a');
+popUpTogglerBtn.innerHTML = '<img src="../assets/close-btn.png">';
 
 for (let i = 0; i < data.length; i += 1) {
   elements[i].addEventListener('click', () => {
     body.classList.add('show');
     popUpTogglerBtn.className = 'toggle-to';
-    popUpTogglerBtn.textContent = 'X';
     popUpTogglerBtn.setAttribute('href', `#pop-up${i}`);
     popup[i].classList.add('show');
     popUpBg.classList.add('show');
