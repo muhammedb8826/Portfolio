@@ -1,59 +1,56 @@
 const data = [
   {
-    name: ['Tonic'],
-    description: [
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    ],
-    featured: [{ feature1: 'CANOPY', feature2: 'Back End Dev', year: 2023 }],
+    name: 'Doctor Appointment',
+    description: 
+      'An Application that Connects Users with Doctors and Allows Them to Schedule and Change Their Visits',
+    featured: [{ feature1: 'Front End Dev', feature2: 'Back End Dev', year: 2023 }],
     image: [
       { imageSrc: './assets/m-project-1.png', imageAlt: 'project-1' },
-      { imageSrc: './assets/project-1.png', imageAlt: 'project-1' },
+      { imageSrc: './assets/m-project-1.png', imageAlt: 'project-1' },
     ],
-    technologies: [{ teck1: 'html', teck2: 'css', teck3: 'javascript' }],
-    liveLink: [],
-    sourceLink: [],
+    technologies: [{ teck1: 'React', teck2: 'Ruby on Rails', teck3: 'Postgres DB', teck4: 'Redux', teck5: 'CSS' }],
+    liveLink: 'https://doc-appointment-n7zf.onrender.com/',
+    sourceLink: 'https://github.com/muhammedb8826/doctor-appointment-frontend',
   },
   {
-    name: ['Multi-Post Stories'],
+    name: ['Flame-cafe'],
     description: [
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      'The Flame-cafe website displays Meals from an external API. It also allows visitors to like and make a comment. All data is preserved thanks to the external Meals DB API service.',
     ],
-    featured: [{ feature1: 'CANOPY', feature2: 'Back End Dev', year: 2023 }],
+    featured: [{ feature1: 'Front End Dev', feature2: 'API', year: 2023 }],
     image: [
       { imageSrc: './assets/m-project-2.png', imageAlt: 'project-2' },
-      { imageSrc: './assets/project-2.png', imageAlt: 'project-2' },
+      { imageSrc: './assets/m-project-2.png', imageAlt: 'project-2' },
     ],
-    technologies: [{ teck1: 'html', teck2: 'css', teck3: 'javascript' }],
-    liveLink: [],
-    sourceLink: [],
+    technologies: [{ teck1: 'html', teck2: 'css', teck3: 'javascript', teck4: 'webpack', teck5: 'jest'}],
+    liveLink: 'https://shayan1234554321.github.io/flame-cafe/dist/',
+    sourceLink: 'https://github.com/muhammedb8826/flame-cafe',
   },
   {
-    name: ['Facebook 360'],
-    description: [
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    ],
-    featured: [{ feature1: 'CANOPY', feature2: 'Back End Dev', year: 2023 }],
+    name: 'Space travelers hub',
+    description: 
+      "A web application with the real live data from the SpaceX API that provides commercial and scientific space travel services.",
+    featured: [{ feature1: 'Front End Dev', feature2: 'API', year: 2023 }],
     image: [
       { imageSrc: './assets/m-project-3.png', imageAlt: 'project-3' },
-      { imageSrc: './assets/project-3.png', imageAlt: 'project-3' },
+      { imageSrc: './assets/m-project-3.png', imageAlt: 'project-3' },
     ],
-    technologies: [{ teck1: 'html', teck2: 'css', teck3: 'javascript' }],
-    liveLink: [],
-    sourceLink: [],
+    technologies: [{ teck1: 'React', teck2: 'API', teck3: 'Redux', teck4: 'Bootstrap', teck5: 'CSS' }],
+    liveLink: 'https://space-travelers-hub-575u.onrender.com/',
+    sourceLink: 'https://github.com/muhammedb8826/Space-travelers',
   },
   {
-    name: ['Uber Navigation'],
-    description: [
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    ],
-    featured: [{ feature1: 'CANOPY', feature2: 'Back End Dev', year: 2023 }],
+    name: 'Calculator',
+    description: 
+      'a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations. Read a random math-related quote.',
+    featured: [{ feature1: 'Front End Dev', feature2: 'API', year: 2023 }],
     image: [
       { imageSrc: './assets/m-project-4.png', imageAlt: 'project-4' },
-      { imageSrc: './assets/project-4.png', imageAlt: 'project-4' },
+      { imageSrc: './assets/m-project-4.png', imageAlt: 'project-4' },
     ],
-    technologies: [{ teck1: 'html', teck2: 'css', teck3: 'javascript' }],
-    liveLink: [],
-    sourceLink: [],
+    technologies: [{ teck1: 'React', teck2: 'Redux', teck3: 'css', teck4: 'webpack', teck5: 'jest' }],
+    liveLink: 'https://math-magician-satc.onrender.com/',
+    sourceLink: 'https://github.com/muhammedb8826/Calculator',
   },
 ];
 
