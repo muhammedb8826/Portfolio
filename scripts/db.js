@@ -13,10 +13,9 @@ const data = [
     sourceLink: 'https://github.com/muhammedb8826/doctor-appointment-frontend',
   },
   {
-    name: ['Flame-cafe'],
-    description: [
+    name: 'Flame-cafe',
+    description:
       'The Flame-cafe website displays Meals from an external API. It also allows visitors to like and make a comment. All data is preserved thanks to the external Meals DB API service.',
-    ],
     featured: [{ feature1: 'Front End Dev', feature2: 'API', year: 2023 }],
     image: [
       { imageSrc: './assets/m-project-2.png', imageAlt: 'project-2' },
