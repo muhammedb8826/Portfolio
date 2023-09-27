@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Gilda+Display&family=Libre+Baskerville&family=Noto+Sans&family=Open+Sans&family=Playfair+Display:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 
-* {
+:root {
+  --max-width: 1200px;
+  --main-color: #6070FF;
+  --text-color: #474554;
+  --text-color-light: #faf8ff;
+  --button-overlay-color: #3856E0;
+}
+
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -14,13 +22,32 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #f7f7f9;
-  padding: 0;
-  margin: 0;
 }
 
 body.show {
   overflow: hidden;
+}
+
+.get-my-resume {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 8px;
+  background-color: #396df2;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+  text-decoration: none;
+}
+
+.get-my-resume:hover {
+  background-color: #2d40e6;
 }
 
 .header {
@@ -361,13 +388,23 @@ nav.active .menu-items li {
 }
 
 .content h1 {
-  width: 50vw;
+  /* width: 50vw; */
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2em;
   line-height: 52px;
   color: #172b4d;
   margin-bottom: 12px;
   padding-top: 75px;
+}
+
+.content h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  /* font-size: 32px; */
+  line-height: 44px;
+  color: #396df2;
+  margin-bottom: 12px;
+  border: 1px solid #dfe1e6;
 }
 
 #primary-text {
@@ -821,7 +858,8 @@ hr {
   }
 
   .content h1 {
-    width: 40%;
+    font-size: 3em;
+    width: 100%;
   }
 
   #primary-text {
