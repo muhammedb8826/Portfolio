@@ -298,10 +298,6 @@ nav.active .menu-items li {
   width: 100%;
 }
 
-.skill-name-and-arrow span img {
-  width: 13px;
-}
-
 .pop-up-section.show .toggle-to {
   position: absolute;
   top: 0.7rem;
@@ -545,15 +541,102 @@ nav.active .menu-items li {
   padding: 0;
 }
 
-.skill-name-and-arrow {
+.skills > li {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   color: #000;
-  padding: 24px 12px;
+  padding: 1em 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.languages-container {
+  margin-bottom: 2em;
+  transition: all 0.5s ease-in-out;
+}
+
+.frameworks-container.active {
+  margin-bottom: 4em;
+  transition: all 0.5s ease-in-out;
+}
+
+.skills-container.active {
+  margin-bottom: 6.2em;
+  transition: all 0.5s ease-in-out;
+}
+
+.languages-container.active {
+  margin-bottom: 0;
+}
+
+.skills > li span img {
+  width: 13px;
+}
+
+.languages-list.closed {
+  display: none;
+}
+
+.frameworks-list, .skills-list {
+  display: none;
+}
+
+#languages-arrow {
+  rotate: 90deg;
+}
+
+#frameworks-arrow, #skills-arrow {
+  rotate: 0deg;
+}
+
+#frameworks-arrow.rotate, #skills-arrow.rotate {
+  rotate: 90deg;
+}
+
+#languages-arrow.rotate {
+  rotate: 0deg;
+}
+
+.languages-list, .frameworks-list.opened, .skills-list.opened {
+ position: absolute;
+ top:2em;
+ padding: 0.7em;
+ display: block;
+}
+
+.languages-list ul, .frameworks-list.opened ul, .skills-list.opened ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.languages-list ul li {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 0.5em;
+  border-radius: 8px;
+  background: #ebebff;
+  color: #5564eb;
+}
+
+.frameworks-list.opened ul li, .skills-list.opened ul li {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 0.5em;
+  border-radius: 8px;
+  background: #ebebff;
+  color: #5564eb;
 }
 
 hr {
@@ -701,6 +784,11 @@ hr {
   text-align: center;
   background-color: #fff4f4;
   display: none;
+}
+
+.email {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -957,5 +1045,13 @@ hr {
 
   .form-container #form-text-area {
     width: 100%;
+  }
+
+  .frameworks-container.active {
+    margin-bottom: 2em;
+  }
+
+  .skills-container.active {
+    margin-bottom: 2.2em;
   }
 }

@@ -2,7 +2,7 @@ const data = [
   {
     name: 'Doctor Appointment',
     description: 
-      'An Application that Connects Users with Doctors and Allows Them to Schedule and Change Their Visits',
+      'An application that It lets you book doctor appointments. You can create users, choose doctors, and add or cancel appointments.',
     featured: [{ feature1: 'Front End Dev', feature2: 'Back End Dev', year: 2023 }],
     image: [
       { imageSrc: './assets/m-project-1.png', imageAlt: 'project-1' },
@@ -16,7 +16,7 @@ const data = [
     name: 'Flame-cafe',
     description:
       'The Flame-cafe website displays Meals from an external API. It also allows visitors to like and make a comment. All data is preserved thanks to the external Meals DB API service.',
-    featured: [{ feature1: 'Front End Dev', feature2: 'API', year: 2023 }],
+    featured: [{ feature1: 'Front-end Dev', feature2: 'API', year: 2023 }],
     image: [
       { imageSrc: './assets/m-project-2.png', imageAlt: 'project-2' },
       { imageSrc: './assets/m-project-2.png', imageAlt: 'project-2' },
@@ -29,7 +29,7 @@ const data = [
     name: 'Space travelers hub',
     description: 
       "A web application with the real live data from the SpaceX API that provides commercial and scientific space travel services.",
-    featured: [{ feature1: 'Front End Dev', feature2: 'API', year: 2023 }],
+    featured: [{ feature1: 'Front-end Dev', feature2: 'API', year: 2023 }],
     image: [
       { imageSrc: './assets/m-project-3.png', imageAlt: 'project-3' },
       { imageSrc: './assets/m-project-3.png', imageAlt: 'project-3' },
@@ -41,8 +41,8 @@ const data = [
   {
     name: 'Calculator',
     description: 
-      'a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations. Read a random math-related quote.',
-    featured: [{ feature1: 'Front End Dev', feature2: 'API', year: 2023 }],
+      'A website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations. Read a random math-related quote.',
+    featured: [{ feature1: 'Front-end Dev', feature2: 'API', year: 2023 }],
     image: [
       { imageSrc: './assets/m-project-4.png', imageAlt: 'project-4' },
       { imageSrc: './assets/m-project-4.png', imageAlt: 'project-4' },

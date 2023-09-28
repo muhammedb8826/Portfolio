@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammed's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="scripts/app.js" defer></script>
     <script src="scripts/works.js" type="module"></script>
     <script src="scripts/form-validation.js" defer></script>
@@ -100,42 +103,48 @@
         <a class="get-my-resume" href="./assets/Muhammed_Berisso_Resume.pdf" download>Get my resume</a>
       </section>
       <ul class="skills">
-        <li class="skill-name-and-arrow">
+        <li class="languages-container" id="language-btn">
           Languages
-          <span><img src="./assets/down-arrow.png" alt="down-arrow" /></span>
-        </li>
-        <li class="images">
-          <ul>
-            <li class="mobile">
-              <img src="./assets/Frame 9.png" alt="js-icon" />
-            </li>
-            <li class="mobile">
-              <img src="./assets/Frame 10.png" alt="html-icon" />
-            </li>
-            <li class="mobile">
-              <img src="./assets/Frame 11.png" alt="css-icon" />
-            </li>
-            <li class="desktop">
-              <img src="./assets/Frame 99.png" alt="js-icon" />
-            </li>
-            <li class="desktop">
-              <img src="./assets/Frame 100.png" alt="html-icon" />
-            </li>
-            <li class="desktop">
-              <img src="./assets/Frame 101.png" alt="css-icon" />
-            </li>
-          </ul>
-        </li>
-        <li class="skill-name-and-arrow">
-          Frameworks<span
-            ><img src="./assets/arrow-point-to-right.png" alt="rigth-arrow"
+          <span
+            ><img id="languages-arrow" src="./assets/arrow-point-to-right.png" alt="rigth-arrow"
           /></span>
+          <div class="languages-list">
+            <ul>
+              <li>React</li>
+              <li>Nodejs</li>
+              <li>Ruby</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </li>
+        <li class="frameworks-container" id="frameworks-btn">
+          Frameworks<span
+            ><img id="frameworks-arrow" src="./assets/arrow-point-to-right.png" alt="rigth-arrow"
+          /></span>
+          <div class="frameworks-list">
+            <ul>
+              <li>Ruby on Rails</li>
+              <li>RSpec</li>
+              <li>Capybara</li>
+              <li>Bootstrap</li>
+              <li>Sass</li>
+            </ul>
+          </div>
         </li>
         <hr />
-        <li class="skill-name-and-arrow">
+        <li class="skills-container" id="skills-btn">
           Skills<span
-            ><img src="./assets/arrow-point-to-right.png" alt="right-arrow"
+            ><img id="skills-arrow" src="./assets/arrow-point-to-right.png" alt="right-arrow"
           /></span>
+          <div class="skills-list">
+            <ul>
+              <li>PostgreSQL</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Remote Pair-Programming</li>
+              <li>Dev Tools</li>
+            </ul>
+          </div>
         </li>
         <hr />
       </ul>
@@ -155,7 +164,7 @@
           <label for="your-name" hidden>What's your name</label>
           <input
             type="text"
-            placeholder="Yeremias"
+            placeholder="Full name"
             required
             id="your-name"
             class="input-text"
@@ -164,7 +173,7 @@
           <label for="email" hidden>what's your email</label>
           <input
             type="email"
-            placeholder="natajayanj14@gmail.com"
+            placeholder="Email address"
             id="email"
             class="input-text"
             required
@@ -182,6 +191,7 @@
           <div id="errorTxt">Please use lowercase letters only for a valid email address!</div>
           <button class="form-button" type="submit" id="submitBtn">Get in Touch</button>
         </form>
+        <span class="email">muhammedb8826@gmail.com</span>
         <div class="line">
           <div></div>
         </div>
