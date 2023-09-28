@@ -388,7 +388,6 @@ nav.active .menu-items li {
 }
 
 .content h1 {
-  /* width: 50vw; */
   font-weight: 700;
   font-size: 2em;
   line-height: 52px;
@@ -400,11 +399,9 @@ nav.active .menu-items li {
 .content h2 {
   font-size: 1.5em;
   font-weight: 700;
-  /* font-size: 32px; */
   line-height: 44px;
   color: #396df2;
   margin-bottom: 12px;
-  border: 1px solid #dfe1e6;
 }
 
 #primary-text {
